@@ -25,7 +25,6 @@ Found 2 IAM Roles that grant access to principals in untrusted accounts!
     },
     {
         "arn": "arn:aws:iam::012345678912:role/cross-account-test-role",
-        "role_name": "cross-account-test-role",
         "untrusted_principals": [
             "arn:aws:iam::333333333333:root"
         ]
