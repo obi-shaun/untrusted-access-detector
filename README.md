@@ -2,9 +2,9 @@
 
 Detecting untrusted access to AWS resources in your account. 
 
-It only supports IAM Roles, but I'd like to add detectors for other resources in the future. It defaults to trusting the account of the AWS credentials you have configured in your environment. It also defaults to trusting any AWS managed service principals. 
+It defaults to trusting the account of the AWS credentials you have configured in your environment. It also defaults to trusting any AWS managed service principals. 
 
-In the future, I'd like to add detectors for additional resource types and support for providing a list of trusted Organization Ids or a list of trusted accounts.
+In the future, I'd like to add detectors for additional resource types and support for providing a list of trusted accounts.
 
 It has a CLI. See the example below. 
 
@@ -16,8 +16,7 @@ Looking for untrusted access granted to IAM Roles in 012345678912.
 Found 2 IAM Roles that grant access to principals in untrusted accounts!
 [
     {
-        "arn": "arn:aws:iam::012345678912:role/CloudBerry",
-        "role_name": "privilegedaccessrole",
+        "arn": "arn:aws:iam::012345678912:role/privileged-access-role",
         "untrusted_principals": [
             "arn:aws:iam::555555555555:root",
             "arn:aws:iam::222222222222:root",
