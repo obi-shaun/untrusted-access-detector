@@ -1,10 +1,12 @@
 # untrusted-access-detector
 
+# You should consider using IAM Access Analyzer... https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
+
 Detecting untrusted access to AWS resources in your account. 
 
 It defaults to trusting the account of the AWS credentials you have configured in your environment. It also defaults to trusting any AWS managed service principals. 
 
-In the future, I'd like to add detectors for additional resource types and support for providing a list of trusted accounts.
+In the future, I'd like to add detectors for additional resource types and support for providing a list of trusted accounts. Also, today, the way it works is pretty basic and doesn't account for conditions.
 
 It has a CLI. See the example below. 
 
