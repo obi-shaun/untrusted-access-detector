@@ -1,6 +1,6 @@
 # untrusted-access-detector
 
-# You should consider using IAM Access Analyzer... https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
+**You should consider using IAM Access Analyzer...** https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html
 
 Detecting untrusted access to AWS resources in your account. 
 
